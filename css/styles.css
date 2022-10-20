@@ -206,6 +206,10 @@ mark, .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
 }
+.flip-2-hor-top-1 {
+	-webkit-animation: flip-2-hor-top-1 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate-reverse forwards;
+	        animation: flip-2-hor-top-1 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) alternate-reverse forwards;
+}
 
 sub,
 sup {
@@ -214,6 +218,7 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
+
 
 sub {
   bottom: -0.25em;
@@ -486,6 +491,8 @@ progress {
   font-weight: 300;
   line-height: 1.2;
 }
+@-webkit-keyframes flip-2-hor-top-1
+{0%{-webkit-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:translateY(-100%) rotateX(-180deg);transform:translateY(-100%) rotateX(-180deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}@keyframes flip-2-hor-top-1{0%{-webkit-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:translateY(-100%) rotateX(-180deg);transform:translateY(-100%) rotateX(-180deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
@@ -3019,8 +3026,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-primary:hover {
   color: #fff;
